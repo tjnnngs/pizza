@@ -1,0 +1,10 @@
+require "minitest/autorun"
+require_relative "pizza.rb"
+
+class Pizza < Minitest::Test
+
+
+def size_pizza()
+	pizza_size = [personal, small, medium, large]
+	my_pizza = pizza_size.sample
+end
