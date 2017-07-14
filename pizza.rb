@@ -6,8 +6,12 @@
 		order.to_i
 	end
 
+	def size()
+		["personal", "small", "medium", "large"].sample
+	end
+
 	def crust()
-		["pan", "thin", "thick"].sample
+		["pan", "thin crust", "thick crust"].sample
 	end
 
 	def sauce()
@@ -20,7 +24,7 @@
 
 	def pizza_maker()
 		take_order.times do 
-			p "You ordered 1 #{crust}, #{sauce}, #{toppings} pizza"
+			p "You ordered 1 #{size}, #{crust}, #{sauce}, #{toppings} pizza"
 
 		end
 			
