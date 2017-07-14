@@ -24,7 +24,7 @@
 
 	def pizza_maker()
 		take_order.times do 
-			p "You ordered 1 #{size}, #{crust}, #{sauce}, #{toppings} pizza"
+			p "You ordered 1 #{size}, #{crust}, #{sauce}, #{toppings} and #{toppings} pizza"
 
 		end
 			
